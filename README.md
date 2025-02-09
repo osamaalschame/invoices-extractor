@@ -39,8 +39,8 @@ Ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repo-url>
-cd <repo-directory>
+git clone https://github.com/osamaalschame/invoices-extractor.git
+cd <invoices-extractor>
 ```
 
 ### 2. Install Dependencies
@@ -82,6 +82,66 @@ CREATE TABLE IF NOT EXISTS invoices (
     UNIQUE (sender, invoice_amount, due_date)
 );
 ```
+# Invoice Extraction Regex Patterns
+
+This document contains the accepted phrases and explanations for the following invoice extraction patterns:
+
+1. **Invoice Number Pattern**
+2. **Due Date Pattern**
+3. **Total Amount Pattern**
+
+---
+
+## 1. Invoice Number Pattern
+
+### Regex Pattern:
+
+### Accepted Phrases:
+- **Bill No** 
+- **Invoice Number**
+- **Invoice No**
+- **Invoice #**
+- **Bill #**
+
+### Example Matches:
+- **Bill No 003932234291**
+- **Invoice No: INV-12345**
+- **Invoice No: A412345**
+- **Invoice # 123456**
+- **Bill No 004005310604**
+
+## 2. Due Date Pattern
+
+### Accepted Phrases:
+- **Due Date**
+- **Payment Due Date**
+- **Invoice Due Date**
+- **Due By**
+- **Pay By**
+
+### Example Matches:
+- **Due Date: 2023-12-31**
+- **Payment Due Date: 12/31/2023**
+- **Invoice Due Date: 31-12-2023**
+- **Due By: December 31, 2023**
+- **Pay By: 15 JUL 2024**
+
+## 3. Total Amount Pattern
+
+### Accepted Phrases:
+- **Total Amount**
+- **Amount Due**
+- **Total**
+- **Grand Total**
+- **Invoice Total**
+- **Balance Due**
+
+### Example Matches:
+- **Total Amount: $3183.25**
+- **Amount Due: €150.50**
+- **Total: 2500.75**
+- **Grand Total: £3200.00**
+- **Invoice Total: 5000.99**
 
 ## Running the Application
 
@@ -114,6 +174,11 @@ Renders the invoice dashboard.
 ```
 POST /update-invoice
 ```
+### 3. Add On Features
+- **Search function on the dashboard**
+- **Sort by the nearest due date**
+- **Preview PDF invoices**
+- **Update function for manual correction and update**
 
 #### Request Body (JSON):
 
