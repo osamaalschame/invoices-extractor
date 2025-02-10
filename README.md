@@ -94,6 +94,28 @@ git clone https://github.com/osamaalschame/invoices-extractor.git
 cd <invoices-extractor>
 ```
 
+### 2. (Optional) Create a Python Virtual Environment / (Optional) Erstellen einer Python-Umgebung
+It is recommended to use a virtual environment to manage dependencies.
+
+Es wird empfohlen, eine virtuelle Umgebung zu verwenden, um Abhängigkeiten zu verwalten.
+
+# Create a virtual environment
+```
+python -m venv env
+```
+
+# Activate virtual environment (Windows)
+```
+env\\Scripts\\activate
+
+```
+
+# Activate virtual environment (Mac/Linux)
+```
+source env/bin/activate
+
+```
+
 ### 2. Install Dependencies / Abhängigkeiten installieren
 
 ```bash
