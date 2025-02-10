@@ -99,18 +99,18 @@ It is recommended to use a virtual environment to manage dependencies.
 
 Es wird empfohlen, eine virtuelle Umgebung zu verwenden, um Abhängigkeiten zu verwalten.
 
-# Create a virtual environment
+### Create a virtual environment
 ```
 python -m venv env
 ```
 
-# Activate virtual environment (Windows)
+### Activate virtual environment (Windows)
 ```
 env\\Scripts\\activate
 
 ```
 
-# Activate virtual environment (Mac/Linux)
+### Activate virtual environment (Mac/Linux)
 ```
 source env/bin/activate
 
