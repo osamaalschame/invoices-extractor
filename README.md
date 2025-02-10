@@ -94,7 +94,7 @@ git clone https://github.com/osamaalschame/invoices-extractor.git
 cd <invoices-extractor>
 ```
 
-### 2. (Optional) Create a Python Virtual Environment / (Optional) Erstellen einer Python-Umgebung
+### 2. Create a Python Virtual Environment / (Optional) Erstellen einer Python-Umgebung
 It is recommended to use a virtual environment to manage dependencies.
 
 Es wird empfohlen, eine virtuelle Umgebung zu verwenden, um Abhängigkeiten zu verwalten.
@@ -116,13 +116,13 @@ source env/bin/activate
 
 ```
 
-### 2. Install Dependencies / Abhängigkeiten installieren
+### 3. Install Dependencies / Abhängigkeiten installieren
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Set Up Environment Variables / Umgebungsvariablen einrichten
+### 4. Set Up Environment Variables / Umgebungsvariablen einrichten
 
 Create a `.env` file in the project root and add the following:
 
@@ -136,7 +136,7 @@ host=your_database_host
 port=your_database_port
 ```
 
-### 4. Configure Gmail API / Gmail API einrichten
+### 5. Configure Gmail API / Gmail API einrichten
 
 - Create credentials from the Google Cloud Console.  
   **Erstellen Sie Anmeldeinformationen in der Google Cloud Console.**  
@@ -146,7 +146,7 @@ port=your_database_port
   **Folgen Sie diesem Video-Tutorial für die Schritt-für-Schritt-Einrichtung:**  
   [How to Set Up Google Cloud Credentials](https://www.youtube.com/watch?v=1Ua0Eplg75M&ab_channel=OutrightSystems) 
 
-### 5. Start the Flask App / Starten der Flask-App
+### 6. Start the Flask App / Starten der Flask-App
 
 ```bash
 python app.py
