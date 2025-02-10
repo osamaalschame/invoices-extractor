@@ -118,8 +118,11 @@ port=your_database_port
 
 - Create credentials from the Google Cloud Console.  
   **Erstellen Sie Anmeldeinformationen in der Google Cloud Console.**  
-- Download the credential json file and place it in `Gmail API Credential` folder.  
-  **Laden Sie die JSON-Datei herunter und platzieren Sie sie im Ordner `Gmail API Credential`.**  
+- Download the credential JSON file and name it as `credentials.json`, then place it in the `Gmail API Credential` folder.  
+  **Laden Sie die JSON-Datei herunter, benennen Sie sie als `credentials.json` und platzieren Sie sie im Ordner `Gmail API Credential`.**  
+- Follow this video tutorial for step-by-step setup:  
+  **Folgen Sie diesem Video-Tutorial für die Schritt-für-Schritt-Einrichtung:**  
+  [How to Set Up Google Cloud Credentials](https://www.youtube.com/watch?v=1Ua0Eplg75M&ab_channel=OutrightSystems) 
 
 ### 5. Start the Flask App / Starten der Flask-App
 
